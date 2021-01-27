@@ -1,3 +1,2 @@
-An attempt at building portfolio
+# ThinkFul Portfolio
 
-Web address@ https://meetpatel89.github.io/Portfolio-new/
