@@ -79,13 +79,15 @@ header nav ul li a {
 
 #aboutme,
 #techstack,
-#projects {
+#projects,
+#contact {
   background-color: #9cfffa;
   margin: 10px;
 }
 
 .tech,
-.projects {
+.projects,
+.contact {
   padding: 10px;
 }
 
@@ -93,7 +95,8 @@ header nav ul li a {
   margin: 5px;
 }
 
-.techstack {
+.techstack,
+.projects {
   font-family: 'PT Sans', sans-serif;
   font-size: 20px;
 }
@@ -104,6 +107,13 @@ header nav ul li a {
 
 .passions {
   padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.contact {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -134,6 +144,75 @@ h2 {
   height: 25px;
 }
 
+.projects {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.gif {
+  width: 200px;
+  height: 350px;
+  margin: 10px;
+}
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 15px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+  max-width: 550px;
+}
+
+label {
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+input,
+textarea {
+  width: 100%;
+}
+
+button {
+  width: 80px;
+  height: 50px;
+  margin: 5px;
+}
+
+.project > section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3.project-title {
+  font-size: 15px;
+  margin: 5px;
+  color: #5b5750;
+}
+
+.project {
+  margin: 5px;
+}
+
+.project section p {
+  margin-bottom: 5px;
+  margin-top: 0;
+}
+
 @media all and (min-width: 400px) {
   header nav ul {
     flex-direction: row;
@@ -154,7 +233,17 @@ h2 {
   header h1 {
     font-size: 42px;
   }
-}
 
-@media all and (min-width: 1000px) {
+  .gif {
+    width: 300px;
+    height: 450px;
+  }
+
+  .project {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 10px;
+  }
 }
