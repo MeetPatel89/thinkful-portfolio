@@ -30,12 +30,17 @@ header nav {
 
 header nav ul {
   display: flex;
+  flex-direction: column;
   list-style: none;
   padding-left: 0;
 }
 
 a {
   text-decoration: none;
+}
+
+header nav ul li {
+  margin: 3px;
 }
 
 header nav ul li a {
@@ -72,9 +77,29 @@ header nav ul li a {
   height: auto;
 }
 
-#aboutme {
+#aboutme,
+#techstack,
+#projects {
   background-color: #9cfffa;
   margin: 10px;
+}
+
+.tech,
+.projects {
+  padding: 10px;
+}
+
+.techstack ul li {
+  margin: 5px;
+}
+
+.techstack {
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+}
+
+.tech h2 {
+  text-align: center;
 }
 
 .passions {
@@ -104,7 +129,21 @@ h2 {
   font-size: 20px;
 }
 
+#git-size {
+  width: 25px;
+  height: 25px;
+}
 
+@media all and (min-width: 400px) {
+  header nav ul {
+    flex-direction: row;
+  }
+
+  header nav ul li a {
+    font-size: 12px;
+    margin: 5px;
+  }
+}
 
 @media all and (min-width: 600px) {
   header {
