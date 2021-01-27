@@ -51,6 +51,19 @@ header nav ul li a {
   background-color: #9cfffa;
 }
 
+.intro-desc {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro-desc > p {
+  margin: 5px;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 20px;
+}
+
 .responsive {
   max-width: 100%;
   height: auto;
@@ -68,7 +81,4 @@ header nav ul li a {
 }
 
 @media all and (min-width: 1000px) {
-  #intro {
-    flex-direction: row;
-  }
 }
