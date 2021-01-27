@@ -1,257 +1,74 @@
-
-body {
-    margin: 0;
-    font-family: 'Roboto', sans-serif;
-    font-size: 15px;
+* {
+  box-sizing: border-box;
 }
 
-
-main {
-    width: 90%;
-    margin: auto;
+body {
+  font-family: 'Roboto', sans-serif;
 }
 
 header {
-    background-color: #252323;
-    margin-bottom: 40px;
-    width: 100%;
-}
-
-nav {
-    padding-right: 10px;
-}
-img {
-    width: 100%;
-    margin: auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #252323;
+  width: 100%;
 }
 
 header h1 {
-    color: #F5F1ED;
-    text-align: center;
-    margin: 0;
-    padding-top: 20px;
-    font-family: 'Amatic SC', cursive;
+  color: #f5f1ed;
+  text-align: center;
+  padding: 10px;
+  margin: 0;
+  font-family: 'Amatic SC', cursive;
 }
 
 header nav {
-    display: flex;
-    justify-content: center;
+  display: flex;
+  justify-content: center;
 }
 
 header nav ul {
-    display: flex;
-    list-style: none;
-    padding-left: 0;
+  display: flex;
+  list-style: none;
+  padding-left: 0;
 }
 
 header nav ul li a {
-    color: #F5F1ED;
-    text-decoration: none;
-    margin: 0 10px;
-}
-
-h2 {
-    text-align: center;
-    font-family: 'Amatic SC', cursive;
-    font-size: 50px;
-    font-weight: bold;
-    color: #808080;
+  color: #f5f1ed;
+  text-decoration: none;
+  margin: 10px;
 }
 
 .group {
-    display: flex;
-    flex-direction: column;
-    margin: 0 0 5px 5px;
-    border-bottom: 1px solid lightgray;
-    padding-bottom: 5px;
+  display: flex;
+  flex-direction: column;
+  border-bottom: 1px solid lightgray;
+  margin: 10px;
+  padding: 10px;
+  justify-content: center;
+  align-items: center;
+  background-color: #9cfffa;
 }
 
-form {
-    width: 95%;
-    margin: auto;
+.responsive {
+  max-width: 100%;
+  height: auto;
 }
-
-form input,
-form textarea {
-    width: 90%;
-    margin: auto;
-    margin-bottom: 10px;
-    
-}
-
-#aboutme {
-    margin: 0 0 5px 5px;
-    border-bottom: 1px solid lightgray;
-}
-
-.project-links a,
-.social-links a,
-.email a {
-    text-decoration: none;
-}
-
-.email a {
-    font-size: 15px;
-    color: #393E41;
-}
-
-.social {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-footer p {
-    text-align: center;
-    margin: 0;
-    padding-top: 10px;
-}
-
-footer {
-    background-color: #252323;
-    color: #F5F1ED;
-    height: 70px;
-}
-
-#contact {
-    background-color: lightblue;
-}
-
-#projects {
-    border: 1px solid lightblue;
-}
-
-
-.spacearound .item {
-    margin-top: 10px;
-    border-top: 1px solid lightblue;
-    width: 75%;
-    align-self: center;
-}
-
-.flexcol {
-    display: flex;
-    flex-direction: column;
-    margin-left: 10px;
-}
-
-.project-links a {
-    display: block;
-}
-
-#intro {
-    font-family: 'Indie Flower', cursive;
-    
-    font-size: 20px;
-}
-
-@media all and (max-width: 400px) {
-   
-    a {
-        font-size: 10px;
-    }
-}
-
 
 @media all and (min-width: 600px) {
+  header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 
-    body {
-        font-size: 25px;
-    }
-
-
-#intro {
-    font-family: 'Indie Flower', cursive;
-    
-    font-size: 40px;
+  header h1 {
+    font-size: 42px;
+  }
 }
 
-    header {
-        display: flex;
-        justify-content: space-between;
-        padding: 0 30px;
-        width: initial;
-    }
-
-    h2 {
-        font-size: 80px;
-    }
-
-    .email a {
-        font-size: 36px;
-    }
-
-    header h1 {
-        padding-top: 0;
-        align-self: center;
-    }
-
-    header nav ul li a:hover {
-        color: #bdbdbd;
-        transform: scale(1.2);      /* transform property not working */ 
-    }  
-
-   .group {
-       flex-direction: row;
-       justify-content: center;
-       margin: 0 0 10px 20px;
-       padding: 15px;
-   }
-
-   .spacearound {
-       justify-content: space-around;
-   }
-
-   .spacearound .item {
-       width: initial;
-
-   }
-
-   
-
-   .group form {
-       width: 75%;
-   }
-
-
-   img {
-       width: initial;
-   }
-
-    .projects {
-        width: 800px;
-    }
-
-    .flex-container {
-        flex-direction: row;
-    }
-
-    #aboutme {
-        margin: 0 0 10px 10px;
-    }
-
-    form input,
-    form textarea {
-    width: 100%;
-    margin-bottom: 20px;
+@media all and (min-width: 1000px) {
+  #intro {
+    flex-direction: row;
+  }
 }
-
-.social-links a {
-    margin-right: 15px;
-}
-
-h2 {
-    padding-top: 15px;
-}
-
-.margin-left {
-    margin-left: 15px;
-}
-
-form label {
-    display: block;
-    margin-bottom: 5px;
-}
-}
-
-
