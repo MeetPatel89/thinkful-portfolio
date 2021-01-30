@@ -256,6 +256,15 @@ footer {
   align-items: center;
 }
 
+.project-desc {
+  padding: 10px;
+  max-width: 600px;
+}
+
+.tech-used {
+  padding: 10px;
+}
+
 @media all and (min-width: 600px) {
   header {
     flex-direction: row;
@@ -289,6 +298,7 @@ footer {
     margin: 10px;
   }
 }
+
 
 @media all and (min-width: 800px) {
   .gif {
