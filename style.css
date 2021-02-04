@@ -297,6 +297,11 @@ footer {
     flex-wrap: wrap;
     margin: 10px;
   }
+
+  .projects-flex-row {
+    display: flex;
+    
+  }
 }
 
 
